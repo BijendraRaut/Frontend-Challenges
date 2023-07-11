@@ -18,7 +18,7 @@ body {
     /* padding: 2rem; */
 }
 
-.result h3 {
+.result h3, h2{
     padding: 1.5rem;
     color: lightgrey;
 }
@@ -39,5 +39,7 @@ body {
     padding: 2.5rem;
 }
 
-.marks p {
+.result p {
+    padding: 0.5rem;
+    color: lightgrey;
 }
