@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 50%;
+    margin: auto;
+}
+
+.result {
+    margin: 5rem;
+    width: 20rem;
+    height: 50vh;
+    text-align: center;
+    background-color: rgb(97, 46, 237);
+    border-radius: 3rem;
+    /* padding: 2rem; */
+}
+
+.result h3 {
+    padding: 1.5rem;
+    color: lightgrey;
+}
+
+
+.marks {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin: auto;
+    border-radius: 50%;
+    background-color: hsla(256, 72%, 46%, 1);
+    padding-top: 2rem;
+}
+
+.marks span{
+    color: white;
+    font-size: xx-large;
+    padding: 2.5rem;
+}
+
+.marks p {
+}
