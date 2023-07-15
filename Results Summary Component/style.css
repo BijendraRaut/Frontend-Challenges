@@ -14,32 +14,42 @@ body {
     height: 50vh;
     text-align: center;
     background-color: rgb(97, 46, 237);
-    border-radius: 3rem;
+    border-radius: 2rem;
     /* padding: 2rem; */
 }
 
-.result h3, h2{
-    padding: 1.5rem;
+.result h3{
+    padding: 2rem 0;
     color: lightgrey;
+    margin: auto;
 }
 
 
 .marks {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 11rem;
+    height: 11rem;
     margin: auto;
     border-radius: 50%;
     background-color: hsla(256, 72%, 46%, 1);
-    padding-top: 2rem;
+    padding-top: 1.75rem;
+    color: lightgray;
 }
 
 .marks span{
     color: white;
-    font-size: xx-large;
-    padding: 2.5rem;
+    font-weight: bolder;
+    font-size: 380%;
+    /* margin: auto; */
+    padding: 0 3.2rem;
 }
 
-.result p {
-    padding: 0.5rem;
+.great h2 {
+    padding: 2.5rem 0 1rem;
+    color: white;
+}
+
+.great p {
+    padding: 0 3.5rem;
     color: lightgrey;
+    font-size: medium;
 }
