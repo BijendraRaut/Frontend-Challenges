@@ -52,3 +52,21 @@ body {
     color: lightgrey;
     font-size: medium;
 }
+
+/* summary */
+
+.reaction {
+    background-color: lightpink;
+}
+
+.memory{
+    background-color: lightgoldenrodyellow;
+}
+
+.verbal {
+    background-color: lightgreen;
+}
+
+.visual{
+    background-color: mediumblue;
+}
