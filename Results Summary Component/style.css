@@ -1,6 +1,5 @@
 @import url("./../node_modules/normalize.css/normalize.css");
 
-
 :root{
   /* colors */
   --Light-red: hsl(0, 100%, 67%);
@@ -118,7 +117,6 @@ a{
   padding: 1rem 1.5rem;
 
 }
-
 
 .card-description-head-holder{
   display: flex;
