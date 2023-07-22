@@ -10,14 +10,18 @@
 
 .content{
     background-color: hsl(244, 38%, 16%);
-    margin: auto ;
+    margin: auto;
+    margin-left: 10rem;
     width: 35rem;
     height: 40vh;
+    color: white;
+    border-radius: 0.5rem;
 }
 
 .picture {
     background-color: - hsl(277, 64%, 61%);
-    margin: auto ;
+    margin: auto;
     width: 35rem;
     height: 40vh;
+    margin-right: 10rem;
 }
