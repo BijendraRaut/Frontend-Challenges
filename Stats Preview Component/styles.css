@@ -5,8 +5,19 @@
 
 .container {
     background-color: hsl(233, 47%, 7%);
+    width: 100%;
 }
 
 .content{
     background-color: hsl(244, 38%, 16%);
+    margin: auto ;
+    width: 35rem;
+    height: 40vh;
+}
+
+.picture {
+    background-color: - hsl(277, 64%, 61%);
+    margin: auto ;
+    width: 35rem;
+    height: 40vh;
 }
