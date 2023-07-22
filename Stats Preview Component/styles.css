@@ -6,6 +6,7 @@
 .container {
     background-color: hsl(233, 47%, 7%);
     width: 100%;
+    height: 150vh;
 }
 
 .content{
@@ -17,8 +18,9 @@
     color: white;
     text-align: center;
     border-radius: 0.5rem;
-}
 
+}
+ 
 .picture {
     background-color: - hsl(277, 64%, 61%);
     margin: auto;
