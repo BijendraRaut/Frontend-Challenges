@@ -7,6 +7,8 @@
     background-color: hsl(233, 47%, 7%);
     width: 100%;
     height: 100vh;
+    padding-top: 15rem;
+    padding-left: 12rem;
 }
 
 span {
@@ -15,7 +17,6 @@ span {
 
 .content{
     background-color: hsl(244, 38%, 16%);
-    margin: auto;
     margin-left: 10rem;
     width: 25rem;
     height: 40vh;
@@ -37,12 +38,10 @@ p {
  img {
     height: 40vh;
     width: 25rem;
+    margin-left: 35rem;
+    border-radius: 0.5rem;
  }
 
-.picture {
-    background-color: - hsl(277, 64%, 61%);
-    margin: auto;
-    width: 25rem;
-    height: 25vh;
-    margin-right: 10rem;
-}
+ .picture{
+    margin-top: -20rem;
+ }
