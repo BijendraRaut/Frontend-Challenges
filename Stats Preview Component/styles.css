@@ -30,6 +30,20 @@ h1 {
     margin-bottom: 2rem;
 }
 
+.k{
+    margin-left: -15rem;
+    margin-top: 3rem;
+}
+.templates{
+    margin-top: -4.5rem;
+}
+
+.queries{
+    margin-left: 12.5rem;
+    margin-top: -4.5rem;
+
+}
+
 p {
     color: grey;
     margin-bottom: 2rem;
