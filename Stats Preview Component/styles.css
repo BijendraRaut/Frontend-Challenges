@@ -41,8 +41,12 @@ h1 {
 
 .queries{
     margin-left: 12.5rem;
-    margin-top: -4.5rem;
+    margin-top: -4.2rem;
 
+}
+
+.tags {
+    font-size: xx-small;
 }
 
 p {
