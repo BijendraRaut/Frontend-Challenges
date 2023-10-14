@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register-button {
+    border-radius: 0.5rem;
+}
+
+/* Gajinder 9110150323 */
