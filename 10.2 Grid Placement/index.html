@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: navajowhite;
+        background-size: cover;
+        font-family: "Trebuchet MS", sans-serif;
+      }
+
+      .wrapper {
+        height: 100vh;
+        /* /This part is important for centering/ */
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        position: relative;
+        top: 3rem;
+      }
+      /* 
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: #3c87ff;
+        border-radius: 50%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: scaleDown 2s ease-in-out forwards;
+      }
+
+      .content {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      } */
+
+      @keyframes scaleDown {
+        to {
+          width: 100vw;
+          height: 100vh;
+          border-radius: 0;
+        }
+      }
+
+      body.active .circle {
+        display: none;
+      }
+
+      body.active .content {
+        display: block;
+      }
+
+      .enter {
+        animation: fadeIn 1s, fly-in 1s ease-out;
+      }
+
+      .typing-demo {
+        width: 22ch;
+        animation: typing 2s steps(22);
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: monospace;
+        font-size: 2em;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+
+      @keyframes fly-in {
+        0% {
+          transform: translateY(100%);
+        }
+
+        100% {
+          transform: translateY(0%);
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="enter">
+        <div class="typing-demo">This is a typing demo.</div>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="100%"
+        viewBox="0 0 600 600"
+      >
+        <defs>
+          <linearGradient
+            id="linear-gradient"
+            x1="0.764"
+            y1="0.136"
+            x2="0"
+            y2="0.964"
+            gradientUnits="objectBoundingBox"
+          >
+            <stop offset="0" stop-color="#3c87ff"></stop>
+            <stop offset="1" stop-color="#806afb"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          fill="none"
+          stroke-width="60"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke="url(#linear-gradient)"
+          d="M 350 322 L 196 42 L 42 322 L 196 252"
+        >
+          <animate
+            attributeName="stroke-dasharray"
+            from="1102 0"
+            to="0 1102"
+            dur="2s"
+            begin="0s"
+            fill="freeze"
+          />
+          <animate
+            attributeName="stroke-dashoffset"
+            from="1102"
+            to="0"
+            dur="2s"
+            begin="0s"
+            fill="freeze"
+          />
+        </path>
+      </svg>
+
+      <div class="circle"></div>
+      <div class="content">
+        <h1>Welcome to the New Page</h1>
+        <p>Scroll Up to Transform</p>
+      </div>
+    </div>
+  </body>
+</html>
