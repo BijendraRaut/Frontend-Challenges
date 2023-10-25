@@ -10,14 +10,39 @@
 
       .wrapper {
         height: 100vh;
-        /* /This part is important for centering/ */
+        /*This part is important for centering*/
         display: grid;
         place-items: center;
         overflow: hidden;
         position: relative;
-        top: 3rem;
       }
-      /* 
+
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #3c87ff;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        z-index: 100;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+
+      .nav img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      }
+
       .circle {
         width: 100px;
         height: 100px;
@@ -28,9 +53,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
         animation: scaleDown 2s ease-in-out forwards;
+        display: none; /* Initially hide the circle */
+      }
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding-top: 100px; /* Add padding to the top */
       }
 
-      .content {
+      /* .content {
         display: none;
         position: absolute;
         top: 50%;
@@ -153,5 +187,25 @@
         <p>Scroll Up to Transform</p>
       </div>
     </div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+      <img src="your-logo.png" alt="Your Logo" />
+    </div>
+
+    <script>
+      let scrollCount = 0;
+      const circle = document.querySelector(".circle");
+
+      window.addEventListener("scroll", () => {
+        scrollCount++;
+        if (scrollCount >= 2) {
+          circle.style.display = "block";
+        }
+      });
+    </script>
   </body>
 </html>
