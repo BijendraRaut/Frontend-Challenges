@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scale Image</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+      }
+      #box {
+        height: 380px;
+        width: 380px;
+        background-color: rgba(84, 243, 190, 0.686);
+      }
+      #box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all ease 1s;
+      }
+      #box:hover img {
+        scale: 1.2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <img
+        src="https://images.unsplash.com/photo-1527266237111-a4989d028b4b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9vcHxlbnwwfHwwfHx8MA%3D%3D"
+        alt="not found"
+      />
+    </div>
+  </body>
+</html>
