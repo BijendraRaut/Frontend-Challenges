@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Active Selector</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        padding: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        background: linear-gradient(#f4f003, green);
+        font-weight: bold;
+        border-radius: 20px;
+        color: rgb(240, 233, 233);
+        transform: ease in 0.9s;
+        height: 50px;
+        width: 120px;
+        border: navajowhite;
+        transition: all ease 0.9s;
+      }
+      button:active {
+        scale: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Button</button>
+  </body>
+</html>
