@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Shadow</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        padding: 30px;
+      }
+      #box {
+        height: 300px;
+        width: 350px;
+        background-image: url(https://static.theprint.in/wp-content/uploads/2019/11/dhole.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .bottom {
+        height: 40%;
+        width: 100%;
+        background: linear-gradient(transparent, black);
+        position: absolute;
+        bottom: -40%;
+        transition: all ease 0.5s;
+      }
+      #box:hover .bottom {
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="bottom"></div>
+    </div>
+  </body>
+</html>
