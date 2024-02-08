@@ -6,16 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Font Stretch</title>
     <style>
+      @font-face {
+        font-family: saol;
+        src: url(./Cormorant/Cormorant-VariableFont_wght.ttf);
+      }
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
       html,
       body {
         height: 100%;
         width: 100%;
       }
+      body {
+        padding: 20px;
+      }
+      h1 {
+        font-family: saol;
+        font-weight: 900;
+        font-size: 70px;
+        font-stretch: 100%;
+        transition: all ease 0.9s;
+      }
+      h1:hover {
+        font-stretch: 250%;
+      }
     </style>
   </head>
-  <body></body>
+  <body>
+    <h1>Valtine Day</h1>
+  </body>
 </html>
