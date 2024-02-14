@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto Prefixer</title>
     <style>
+      /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
       * {
         margin: 0;
         padding: 0;
@@ -18,8 +25,14 @@
       .parent {
         height: 100px;
         width: 300px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
         background-color: #000;
       }
@@ -27,6 +40,8 @@
         height: 70px;
         width: 70px;
         background-color: salmon;
+        -webkit-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
         transition: all ease 0.5s;
       }
     </style>
