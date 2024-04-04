@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conic Gradient</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        padding: 20px;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        background: conic-gradient(violet, indigo, blue, green, yellow, orange, red, violet);
+        border-radius: 50%;
+        animation: anime 5s linear infinite ;
+      }
+
+      @keyframes anime {
+        100% {
+            rotate: 360deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
