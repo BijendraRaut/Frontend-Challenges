@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            counter-reset: myCount;
+        }
+
+        h1::before{
+            content: counter(myCount) ". ";
+            counter-increment: myCount;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ramesh</h1>
+    <h1>Ganjender</h1>
+    <h1>Sanju</h1>
+    <h1>Sanjeevani</h1>
+    <h1>Sumesh</h1>
+</body>
+</html>
