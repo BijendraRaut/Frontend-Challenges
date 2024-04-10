@@ -16,12 +16,12 @@
         width: 100%;
       }
       body {
-        counter-reset: myCount;
+        counter-reset: serialNo;
       }
 
       h1::before {
-        content: counter(myCount) ". ";
-        counter-increment: myCount;
+        content: counter(serialNo) ". ";
+        counter-increment: serialNo;
       }
     </style>
   </head>
