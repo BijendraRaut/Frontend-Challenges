@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Font Stretch</title>
     <style>
-      
+      @font-face {
+        font-family: fa;
+        src: url(./KaushanScript-Regular.otf);
+      }
       * {
         margin: 0;
         padding: 0;
@@ -21,19 +24,18 @@
         padding: 20px;
       }
       h1 {
-        font-family: sans-serif;
+        font-family: fa;
         font-weight: 900;
         font-size: 95px;
-        /* font-stretch: 30%; */
-        /* font-stretch: condensed; */
-        transition: all ease 0.9s;
+        font-stretch: 150%; 
+        transition: all ease 0.5s;
       }
-      h1::selection {
-        font-stretch: ultra-expanded;
+      h1:hover {
+        font-stretch: 250%;
       }
     </style>
   </head>
   <body>
-    <h1>Valentine Day</h1>
+    <h1>Ganlikliu</h1>
   </body>
 </html>
